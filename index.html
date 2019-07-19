@@ -1,0 +1,71 @@
+<!-- 
+ 背景1橙色: #f57f18
+ 背景2灰色: #3b3b3b
+
+ 显示幕: #3b3b3b
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>计算器</title>
+ 
+   <link rel="stylesheet" href="./assets/css/index.css">
+  
+ </head>
+ 
+ <body>
+ 
+   <!-- html -->
+   <div id="box">
+ 
+     <!-- 第一部分 显示幕 -->
+     <div id="screen">
+       <!-- 消除焦点 -->
+       <input type="text" id="screenNum" value="0" onfocus="this.blur();">
+       <!-- <p id="screenNum" >0</p> -->
+     </div>
+ 
+     <!-- 第二步部分 number部分 -->
+     <ul>
+ 
+       <li onclick="clearScreen()"><span>AC</span></li>
+       <li onclick="opposite()"><span>+/-</span></li>
+       <li onclick="remaind()"><span>%</span></li>
+       <li onclick="plus()" class="tool"><span>+</span></li>
+       
+ 
+       <li onclick="command(7)"><span>7</span></li>
+       <li onclick="command(8)"><span>8</span></li>
+       <li onclick="command(9)"><span>9</span></li>
+       <li onclick="minus()" class="tool"><span>-</span></li>
+ 
+       <li onclick="command(4)"><span>4</span></li>
+       <li onclick="command(5)"><span>5</span></li>
+       <li onclick="command(6)"><span>6</span></li>
+       <li onclick="times()" class="tool"><span>×</span></li>
+ 
+       <li onclick="command(1)"><span>1</span></li>
+       <li onclick="command(2)"><span>2</span></li>
+       <li onclick="command(3)"><span>3</span></li>
+       <li onclick="divide()" class="tool"><span>÷</span></li>
+ 
+  
+       <li onclick="command(0)"><span>0</span></li>
+       <li onclick="dot()"><span>.</span></li>
+       <li onclick="equal()" class="tool"><span>=</span></li>
+ 
+     </ul>
+ 
+   </div>
+ 
+
+   <script src="./render-prosecc/index.js"></script>
+ 
+ </body>
+ 
+ </html>

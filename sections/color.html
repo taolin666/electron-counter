@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>颜色</title>
+  <style>
+
+    #box {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    span {
+      border: 1px solid #555; 
+      width: 40px;
+      height: 40px;
+      float: left;
+      list-style: none;
+      border-radius: 20px;
+    }
+
+    span:nth-child(1) {
+      background-color:red;
+    }
+    span:nth-child(2) {
+      background-color: white;
+    }
+    span:nth-child(3) {
+      background-color: green;
+    }
+    span:nth-child(4) {
+      background-color: black;
+    }
+    span:nth-child(5) {
+      background-color: orange;
+    }
+
+    span:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+     
+
+    span:active {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+     
+  </style>
+
+</head>
+<body>
+
+  <!-- 40*5 -->
+  <!-- 红 蓝 绿 黑 橙 -->
+  <div id="box"> 
+    
+      <span data-color = 'red'></span> 
+      <span data-color = 'white'></span>
+      <span data-color = 'green'></span>
+      <span data-color = 'black'></span>
+      <span data-color = 'orange'></span>
+  </div>
+
+  <script src="../render-prosecc/color.js">
+  </script>
+
+</body>
+
+</html>

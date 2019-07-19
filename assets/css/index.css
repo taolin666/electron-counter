@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*0. 最最大的盒子
+    1. 宽高
+    2. 边框
+    3. 圆角
+*/
+#box {
+  width: 231px;
+  height: 300px;
+  /* height: 365px; */
+
+  /* margin: 20px; */
+  /* height: 308px; */
+  background-color: #d9d9d9;
+  /* 测试背景颜色 */
+  /* border: 1px solid #777;  */
+}
+
+/*1.1  显示屏 */
+#screen {
+
+  background-color: #666;
+  height: 60px;
+  position: relative;
+}
+
+/* 子绝父相 */
+/*1.2 显示屏文字 */
+#screen input {
+
+  color: white;
+  background-color: transparent;
+  border: transparent; 
+  /* 默认: 14  Myriad Pro*/
+  font-size: 36px;
+  font-weight: normal;
+  font-family: '楷体';
+  width: 211px;
+
+  /* 位置 */
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+
+  /* 输入的方向从右往左 */
+  /* direction: rtl; */
+  text-align: right;
+
+} 
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  width: 57px;
+  height: 47px;
+  float: left;
+  border-right: 1px solid #666;
+  border-top: 1px solid #666;
+  position: relative;
+}
+
+/* 那个0 */
+ul li:nth-child(17) {
+  /* (57*2+1) */
+  width: 115px;
+
+}
+
+/* 最右边的没有右边框 */
+ul li:nth-child(4),
+li:nth-child(8),
+li:nth-child(12),
+li:nth-child(16),
+li:nth-child(19) {
+  border-right: none;
+}
+
+/*  span   */
+ul li span {
+
+  font-size: 21px;
+  font-family: 'Arial';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* 不被选择 */
+  user-select: none;
+}
+
+ul li.tool {
+  background-color: #f79340;
+  color: white;
+}
+
+/* 让运算符的字体变大一点 */
+ul li.tool span {
+  font-size: 28px;
+ 
+}
+
+ul li:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  color: black;
+}
